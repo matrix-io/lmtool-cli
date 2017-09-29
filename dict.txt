@@ -1,0 +1,7 @@
+matrix
+turn on
+turn of
+teevee
+television
+kitchen
+set

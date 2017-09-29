@@ -1,0 +1,21 @@
+{
+  "name": "lmtool-cli",
+  "version": "0.0.1",
+  "description": "CLI for PocketSphinx LMTool (http://www.speech.cs.cmu.edu/tools/lmtool-new.html)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "PocketSphinx",
+    "LMTool",
+    "Lexical"
+  ],
+  "author": "Dilan Nery <dnerylopes@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "request": "^2.83.0",
+    "xmldom": "^0.1.27",
+    "xpath": "0.0.24"
+  }
+}
