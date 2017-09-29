@@ -3,6 +3,9 @@
   "version": "0.0.1",
   "description": "CLI for PocketSphinx LMTool (http://www.speech.cs.cmu.edu/tools/lmtool-new.html)",
   "main": "index.js",
+  "bin": {
+    "lmtool": "./bin/lmtool"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -14,7 +17,10 @@
   "author": "Dilan Nery <dnerylopes@gmail.com>",
   "license": "MIT",
   "dependencies": {
+    "colors": "^1.1.2",
+    "commander": "^2.11.0",
     "request": "^2.83.0",
+    "shelljs": "^0.7.8",
     "xmldom": "^0.1.27",
     "xpath": "0.0.24"
   }

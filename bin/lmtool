@@ -1,0 +1,28 @@
+#!/usr/bin/env node
+
+const fs = require('fs');
+
+const program = require("commander");
+const shell = require('shelljs');
+
+const lmtool = require("..");
+
+program
+	.arguments('<file>')
+	.option('-v --verbose', 'Activate verbose mode')
+	.action(function(file) {
+		if (!shell.which('wget')) {
+		  shell.echo('Sorry, this script requires wget');
+		  shell.exit(-1);
+		}
+
+		lmtool.run(fs.createReadStream(file))
+		.then((link) => {
+			console.log("Downloading...");
+			shell.exec('wget -q --show-progress ' + link);
+		}).catch(err => {
+			console.log("Sorry, We had an error on server");
+			shell.exit(-1);
+		});
+	})
+	.parse(process.argv);
