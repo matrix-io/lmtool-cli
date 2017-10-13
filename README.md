@@ -1,4 +1,4 @@
-# lmtool cli
+# lmtool-cli
 
 This CLI helps you to generate dictionary files with lmtool using your terminal.
 
