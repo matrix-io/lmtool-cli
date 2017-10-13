@@ -4,6 +4,10 @@ This CLI helps you to generate dictionary files with lmtool using your terminal.
 
 ## How to use
 
+First off all you need to install the dependencies:
+
+```$ npm install```
+
 To use it you need to install it globally, as it isn't published  on npm yet you should do this (inside the lib folder):
 
 ```$ npm link```
