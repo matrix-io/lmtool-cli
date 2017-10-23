@@ -1,0 +1,3 @@
+test dictionary generator
+should return an string
+this is a test
